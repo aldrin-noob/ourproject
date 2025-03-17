@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="icon"
+        href="https://imageio.forbes.com/specials-images/imageserve/67bc8ceddfce63fdaf8b75f8/solo-leveling/960x0.jpg?format=jpg&width=960"
+        type="WEBP File (.webp)/x-icon">
+    <style>
+       
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    background: url('https://sm.mashable.com/t/mashable_me/photo/default/untitled-2025-01-22t182720012_62ay.1248.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+header {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+    color: #ff9a8b;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+
+.container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.portfolio-section {
+    padding: 50px;
+    background-color: rgba(24, 24, 24, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.portfolio-section h2 {
+    font-size: 2.5em;
+    color: #e7eff1;
+    margin-bottom: 20px;
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-list li {
+    background-color: #ff9a8b;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.portfolio-list li:hover {
+    transform: scale(1.05);
+    background-color: #ff6f61;
+}
+
+.portfolio-list li h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+.about-section {
+    text-align: left;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.about-section h2 {
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.about-section h3 {
+    color: #ff9a8b;
+    margin-top: 15px;
+}
+
+.special-title {
+    color: #ff9a8b;
+}
+
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    border: none;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.map-iframe {
+    height: 450px;
+}
+
+
+.emoji-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.emoji-list li {
+    font-size: 2.5em;
+    background-color: rgba(255, 165, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    text-align: center;
+}
+
+.emoji-list li:hover {
+    transform: scale(1.1);
+    background-color: #ffec40;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.emoji-list li span {
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: block;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .portfolio-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    iframe {
+        height: 350px;
+    }
+
+    .emoji-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="special-title">Welcome To Our Platform </h1>
+        <h2>Our Personal Portfolio</h2>
+        <p>By aldrin & manny</p>
+    </header>
+
+    <div class="container">
+        <section class="portfolio-section">
+            <h2>Explore Our Portfolio</h2>
+            <p>Discover some of the exciting works and projects we've been working on. Explore our creativity and
+                innovation below.</p>
+            <ul class="portfolio-list">
+                <li onclick="window.location.href='#';">
+                    <h3>🖼️ Artwork</h3>
+                    <p>Explore our latest artwork and designs.</p>
+                </li>
+                <li onclick="window.location.href='#';">
+                    <h3>📝 Blog</h3>
+                    <p>Read our latest articles, stories, and experiences.</p>
+                </li>
+                <li onclick="window.location.href='#';">
+                    <h3>📂 Projects</h3>
+                    <p>Browse through our projects and achievements.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="about-section">
+            <h2>About Us</h2>
+            <p>Hello! We are students at Cebu Eastern College, Inc. passionate about learning and growing. We're always
+                excited to take on new challenges and expand our knowledge in various fields. Here's a little more about
+                us:</p>
+            <div>
+                <h3>HI! I'M ALDRIN</h3>
+                <p>I am a student studying BSIT. I enjoy working on projects that help me learn new skills and apply
+                    them in creative ways.</p>
+            </div>
+            <div>
+                <h3>HI! I'M MANNY</h3>
+                <p>I am also a student studying BSIT. I like to explore more on codes, and I hope to continue exploring
+                    this field further.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Kargalgan vs. Sung Jin Woo 💪</h2>
+            <p>Watch this exciting video where Kargalgan faces off against Sung Jin Woo. Experience the intense battle
+                and strategy. 💥</p>
+            <iframe src="https://www.youtube.com/embed/dLKYFu_sMTM?si=bxIIJ-C7C8Yen4qw" title="YouTube video player"
+                allowfullscreen></iframe>
+        </section>
+
+        <section class="section">
+            <h2>Location: Cebu Eastern College, Inc. 📍</h2>
+            <p>Explore the location of Cebu Eastern College, Inc. and plan your visit. Click the map to open it in a new
+                window. 🌍</p>
+            <a href="https://www.google.com/maps?q=Cebu+Eastern+College+Inc" target="_blank">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d693.9527880531654!2d123.89582651240002!3d10.294599135911044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742029138383!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </a>
+            <section class="section">
+                <h2>Discover South Korea 🌏</h2>
+                <p>Explore the rich history and culture of South Korea through the interactive map below. Zoom in to view major cities, landmarks, and geographical features. 🗺️</p>
+                <iframe class="map-iframe" src="https://www.worldometers.info/maps/south-korea-maps/" title="South Korea Map"></iframe>
+            </section>
+
+            <section class="section">
+                <h2>Emojis Representing Emotions 😊 😞 😡</h2>
+                <p>Below are some emojis representing emotions that can be used to express feelings: 😊 Happy, 😞 Sad, 😡
+                    Angry, ❤️ Caring, 😄 Joyful. Choose the emoji that best suits your message. ✨</p>
+                <ul class="emoji-list">
+                    <li>😊 Happy</li>
+                    <li>😞 Sad</li>
+                    <li>😡 Angry</li>
+                    <li>❤️ Caring</li>
+                    <li>😄 Joyful</li>
+                    <li>🤔 Thoughtful</li>
+                </ul>
+            </section>
+    
+        </div>
+    
+        <footer>
+            <p>&copy; 2025 ALDRIN & MANNY. All rights reserved. | For more information, please contact us. 📧</p>
+        </footer>
+    
+    </body>
+    
+    </html>
